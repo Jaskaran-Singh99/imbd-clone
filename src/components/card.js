@@ -23,7 +23,7 @@ export const Card = ({ movie }) => {
                 loading ?
                     <div className='card'>
                         <SkeletonTheme baseColor='#111' highlightColor='#444' >
-                            <Skeleton duration={2} height={300}></Skeleton>
+                            <Skeleton duration={2} height={440}></Skeleton>
                         </SkeletonTheme>
                     </div>
                     :
@@ -42,7 +42,7 @@ export const Card = ({ movie }) => {
                             </div>
                             </div>
                             <div className='card__title'>
-                                {movie.title.length > 16 ? <div>{movie.title.substring(0,16)}...</div> : movie.title }
+                                {movie.title.length > 21 ? <div>{movie.title.substring(0,21)}...</div> : movie.title }
                             </div>
                             <button className='watch-now-btn'><span><FaPlus></FaPlus></span>Watchlist</button>
 

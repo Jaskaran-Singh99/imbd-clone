@@ -6,6 +6,7 @@ import { Carousel } from 'react-responsive-carousel';
 import {Link} from 'react-router-dom'
 import '../styles/home.css'
 import '../styles/card.css'
+import { IoIosArrowForward } from "react-icons/io";
 import { Card } from '../components/card.js';
 
 export const Home = () => {
@@ -31,19 +32,25 @@ export const Home = () => {
                 <div className="posterImage__runtime">
                     {movie ? movie.release_date : ""}
                     <span className="posterImage__rating">
-                        {movie ? movie.vote_average :""}
+                        {movie ? movie.vote_average.toFixed(1) :""}
                         <i className="fas fa-star" />{" "}
                     </span>
                 </div>
-                <div className="posterImage__description">{movie ? movie.overview : ""}</div>
+                <div className="posterImage__description">{movie ? movie.overview.substring(0, 190) : ""}...</div>
             </div> }
          </Link>
           ))
         }
       </Carousel>
     </div>
-    
+    <div className='heading'>
+        <div className='sub-heading'>
+          <span>Top picks</span><IoIosArrowForward></IoIosArrowForward>
+        </div>
+        <p>Tv shows and movie just for you</p>
+    </div>
     <div className='card-container'>
+      
     {
       popularMovies.map(movie=>{
       return <Card movie={movie}></Card>

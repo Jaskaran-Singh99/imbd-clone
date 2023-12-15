@@ -1,21 +1,22 @@
 .card-container{
     display:flex;
     flex-wrap:wrap;
-    margin-top:150px;
     justify-content: center;
 }
 .card{
-    width:160px;
-    height:400px;
+    width:200px;
+    height:440px;
     margin:20px;
     background-color: #111;
     border-radius: 2px;
     overflow: hidden;
-
-
+    transition:all 0.3s ease-in-out;
+}
+.card:hover{
+    scale: 1.1;
 }
 .image-container{
-    height: 230px;
+    height: 290px;
     overflow: hidden;
     cursor: pointer;
     
@@ -45,7 +46,7 @@
 }
 
 .card__title{
-    margin:5px 0px;
+    margin:15px 0px;
 }
 .favorite svg{
     transition:all 0.3s ease-in;
@@ -62,15 +63,19 @@
     border: none;
     border-radius: 5px;
     font-weight:600;
-    width:100%;
+    width:80%;
     background:transparent;
     background-color:rgba(100, 99, 99, 0.212);
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin-top:20px;
     transition:all 0.7s ease-in;
     cursor:pointer;
     
+}
+.watch-now-btn span{
+    font-size:18px;
 }
 .watch-now-btn:hover{
     background-color: rgba(100, 99, 99, 0.331);
