@@ -5,8 +5,9 @@ import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
 import "react-loading-skeleton/dist/skeleton.css";
 import { CiStar } from "react-icons/ci";
 import { TbStarFilled } from "react-icons/tb";
-import { FaPlus } from "react-icons/fa6";
 import { useEffect } from 'react'
+import {Link} from 'react-router-dom'
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 export const Card = ({ movie }) => {
 
@@ -35,6 +36,7 @@ export const Card = ({ movie }) => {
                             <div className='review-container'>
                             <div className='review'>    
                                 <TbStarFilled></TbStarFilled>
+                                
                                 <span>{movie.vote_average.toFixed(1)}</span>
                             </div>
                             <div className='favorite'>
@@ -44,7 +46,7 @@ export const Card = ({ movie }) => {
                             <div className='card__title'>
                                 {movie.title.length > 21 ? <div>{movie.title.substring(0,21)}...</div> : movie.title }
                             </div>
-                            <button className='watch-now-btn'><span><FaPlus></FaPlus></span>Watchlist</button>
+                            <Link className='watch-now-btn' to={`http://localhost:3000/movie/${movie.id}`} key={movie.id}><span><FaExternalLinkAlt/></span>More Details</Link>
 
                         </div>
                     </div>

@@ -72,6 +72,7 @@
     margin-top:20px;
     transition:all 0.7s ease-in;
     cursor:pointer;
+    text-decoration: none;
     
 }
 .watch-now-btn span{

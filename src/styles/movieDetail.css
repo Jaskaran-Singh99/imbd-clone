@@ -1,0 +1,58 @@
+.background-image{
+    width:100%;
+    opacity: 0.4;
+}
+
+.header-image{
+    max-width:20%;
+}
+.header-image img{
+    width:100%;
+    box-shadow: 0 0 10px 5px black;
+}
+.container{ 
+    position: absolute;
+    display:flex;
+    left:8%;
+    margin-right:30px;
+    top:50%;
+    /* font-family:'Abel'; */
+    width:80%
+}
+.text-container{
+    margin-left:20px;
+}
+
+.movie-title{
+    font-size:40px;
+    margin:30px 0px;
+    letter-spacing: 3px;
+    font-weight:900;
+}
+.genres{
+    text-align:center;
+    letter-spacing:3px;
+    font-size:20px;
+    word-spacing:8px;
+
+}
+.watch-now{
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size:20px;
+    word-spacing: 0px;
+    font-family: Bebas Neue;
+    background-color:#f5c518;
+    margin-top:20px;
+    display: inline-block;
+    text-decoration: none;
+    color:black;
+    transition:all 0.2s linear;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.watch-now:hover{
+    opacity: 0.6;
+}
