@@ -56,3 +56,38 @@
 .watch-now:hover{
     opacity: 0.6;
 }
+
+
+/* Responsive Design css */
+
+@media screen and (max-width: 700px)  {
+    .background-image{
+        display:none;
+    }
+    .container{
+        flex-direction: column;
+        position:relative;
+        left: 0%;
+        width: 95%;
+        margin:auto;
+    }
+    .header-image {
+        max-width: 100%;
+    }
+    
+    .text-container{
+        margin-left:0px;
+        margin-bottom:30px;
+    }
+    .genre{
+        font-size:14px;
+        margin-top:14px;
+    }
+    .movie-title{
+        font-size:25px;
+    }
+    .movie-desc{
+        font-size:14px;
+    }
+    
+}
