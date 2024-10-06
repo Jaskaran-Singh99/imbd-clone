@@ -46,7 +46,7 @@ export const Card = ({ movie }) => {
                             <div className='card__title'>
                                 {movie.title.length > 21 ? <div>{movie.title.substring(0,21)}...</div> : movie.title }
                             </div>
-                            <Link className='watch-now-btn' to={`http://localhost:3000/movie/${movie.id}`} key={movie.id}><span><FaExternalLinkAlt/></span>More Details</Link>
+                            <Link className='watch-now-btn' to={`https://imbd-clone-mu.vercel.app//movie/${movie.id}`} key={movie.id}><span><FaExternalLinkAlt/></span>More Details</Link>
 
                         </div>
                     </div>
